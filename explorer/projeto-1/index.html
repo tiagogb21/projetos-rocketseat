@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mensagem de propaganda para ambientes">
+    <title>Estilo</title>
+    <style>
+        :root {
+            --background-color: #F8FAFC;
+            --primary-color: #E5E7EB;
+            --text-color: #1F2937;
+            --secondary-color: #000000;
+            --project-orange: #FF9900;
+            --project-blue: #63B187;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        body {
+            align-items: center;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+            width: 100vw;
+        }
+
+        header > img {
+            width: 348px;
+            height: 223px;
+            margin-bottom: 1em;
+        }
+
+        main {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 592px;
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            font-family: Inter;
+            font-size: 3em;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 56px;
+            text-align: center;
+        }
+
+        h1 {
+            width: 500px;
+        }
+
+        h1 > span {
+            color: var(--project-orange);
+        }
+
+        article {
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            gap: 1em;
+            line-height: 28px;
+            text-align: center;
+            width: 592px;
+        }
+
+        p > span {
+            font-weight: 600;
+            color: var(--project-orange);
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1em;
+            width: 100%;
+            margin-bottom: 3em;
+        }
+
+        footer::before {
+            content: "";
+            border: 1px solid var(--primary-color);
+            display: block;
+            width: 50%;
+            margin-bottom: 0.5em;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav > ul {
+            align-items: center;
+            display: flex;
+            gap: 2em;
+            justify-content: center;
+            width: 592px;
+        }
+
+        nav > ul > li > a {
+            color: var(--project-orange);
+            opacity: 0.7;
+            font-weight: 600;
+        }
+
+        nav > ul > li > a:hover {
+            opacity: 1;
+        }
+
+        footer > img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- imagem -->
+    <header>
+        <img src="./assets/principal-image.jpg" alt="">
+    </header>
+    <main>
+        <h1>Ambientes <span>únicos</span> para você!</h1>
+        <article>
+            <p>
+                Nós criamos ambientes <strong>exclusivos</strong> e <strong>únicos</strong>, com muito bom gosto e profissionalismo, investimos tempo e <span>dedicação no seu projeto</span>.
+            </p>
+            <p>
+                Tenha <span>ambientes limpos</span> e bem decorados, transmitindo <strong>elegância</strong> e <strong>finesse</strong> para todo aquele que estiver ali.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Instagram</a>
+                </li>
+                <li>
+                    <a href="#">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="./assets/balls-decoration.svg" alt="balls decoration">
+    </footer>
+</body>
+</html>
