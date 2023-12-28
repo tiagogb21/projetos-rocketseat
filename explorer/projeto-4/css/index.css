@@ -1,0 +1,137 @@
+:root {
+    --green-500: #69B99D;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1005px;
+    height: 23px;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 3em;
+}
+
+header > nav > ul > li > a {
+    font-weight: 600;
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+header > nav > ul > li > a {
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+header > nav > ul > li > a:nth-child(0) {
+    opacity: 1;
+}
+
+header > nav > ul > li > a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+h2 {
+    color:#89C5CC;
+}
+
+main {
+    display: flex;
+    width: 1005px;
+    height: 434px;
+    justify-content: space-between;
+}
+
+article {
+    width: 438px;
+    height: 434px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3em;
+    padding-bottom: 60px;
+    margin-top: 20px;
+}
+
+article > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h1 {
+    width: 489px;
+    color: #000;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+h1 > span {
+    color: #89C5CC;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+button {
+    padding: 1em 2em;
+    background-color: var(--green-500);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 16px;
+}
+
+button > img {
+    width: 24px;
+    height: auto;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+img {
+    width: 417px;
+    height: auto;
+}
