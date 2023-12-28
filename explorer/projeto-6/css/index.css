@@ -1,0 +1,97 @@
+:root {
+    --light-blue: #00bfa6;
+    --dark-blue: #2f2e41;
+    --gray: #c2c2c2;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    padding: 50px 100px 20px;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+h1 > span,
+p > span {
+    color: var(--light-blue);
+}
+
+h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+header {
+    width: 100%;
+}
+
+header > nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    gap: 5em;
+    height: 220px;
+}
+
+main > section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.padlock-decoration {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+footer::before {
+    content: '';
+    height: 1px;
+    display: block;
+    background-color: var(--light-blue);
+    margin-bottom: 10px;
+}
