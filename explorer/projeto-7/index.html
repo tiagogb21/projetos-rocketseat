@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="formulário para criar e compartilhar eventos"
+        />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo&display=swap"
+            rel="stylesheet"
+        />
+        <title>Novo Evento</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Crie e compartilhe seu evento.</h1>
+                <h2>
+                    O primeiro passo, é preencher esse formulário de inscrição.
+                </h2>
+            </section>
+            <form id="eventForm" action="">
+                <h3>Informações do Evento</h3>
+                <div class="line"></div>
+                <article>
+                    <label for="eventTitle"
+                        >Título do evento
+                        <span>(mínimo de 8 caracteres)</span></label
+                    >
+                    <input type="text" name="eventTitle" id="eventTitle" />
+                </article>
+                <article>
+                    <label for="eventLink"
+                        >Link do evento
+                        <span>(comece com https://)</span></label
+                    >
+                    <input type="text" name="eventLink" id="eventLink" />
+                </article>
+                <article>
+                    <label for="whatsappContact"
+                        >WhatsApp para contato
+                        <span>(somente números)</span></label
+                    >
+                    <input
+                        type="text"
+                        name="whatsappContact"
+                        id="whatsappContact"
+                    />
+                </article>
+                <article>
+                    <label for="informationExtras">Informações extras</label>
+                    <textarea
+                        name="informationExtras"
+                        id="informationExtras"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </article>
+                <article>
+                    <label for="categoryEvent">Categoria</label>
+                    <select name="categoryEvent" id="categoryEvent">
+                        <option value="">Tipo de Evento</option>
+                    </select>
+                </article>
+                <h3>Privacidade</h3>
+                <article>
+                    <label for="adminEmail"
+                        >Email do administrador
+                        <span>(digite um e-mail válido)</span></label
+                    >
+                    <input type="text" name="adminEmail" id="adminEmail" />
+                </article>
+                <article>
+                    <label for="passwordAccess"
+                        >Senha de acesso para os participantes
+                        <span>(mínimo de 8 caracteres)</span></label
+                    >
+                    <input
+                        type="password"
+                        name="passwordAccess"
+                        id="passwordAccess"
+                    />
+                </article>
+                <article class="checkbox-container">
+                    <label for="privateEvent">
+                        <input
+                            type="checkbox"
+                            name="privateEvent"
+                            id="privateEvent"
+                            style="display: none"
+                        />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                        >
+                            <g clip-path="url(#clip0_3002_23)">
+                                <path
+                                    d="M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z"
+                                    fill="#42D3FF"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3002_23">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </label>
+                    <label for="privateEvent">Evento privado</label>
+                </article>
+                <h3>Dia e Hora</h3>
+                <section>
+                    <article>
+                        <label for="eventDate">Data do evento</label>
+                        <input type="date" name="eventDate" id="eventDate" />
+                    </article>
+                    <article>
+                        <label for="startTime">Hora de início</label>
+                        <input type="time" name="startTime" id="startTime" />
+                    </article>
+                    <article>
+                        <label for="endTime">Hora de término</label>
+                        <input type="time" name="endTime" id="endTime" />
+                    </article>
+                </section>
+                <section>
+                    <button type="submit">Salvar evento</button>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
