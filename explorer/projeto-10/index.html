@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                gap: 2em;
+            }
+
+            div{
+                width: 300px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                align-items: flex-start;
+                gap: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercícios JavaScript</h1>
+
+        <div>
+            <button id="button-hello-world">Exercício 1</button>
+            <button id="button-sum">Exercício 2</button>
+            <button id="button-verify-value1">Exercício 3</button>
+            <button id="button-verify-value2">Exercício 4</button>
+            <button id="button-verify-value3">Exercício 5</button>
+            <button id="button-sub">Exercício 6</button>
+            <button id="button-mult">Exercício 7</button>
+            <button id="button-div">Exercício 8</button>
+            <button id="button-is-even">Exercício 9</button>
+            <button id="button-is-odd">Exercício 10</button>
+        </div>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
