@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projetos</title>
+        <style>
+            :root {
+                --bg_light: #ECE9FD;
+                --text_dark: #090039;
+                --text_dark_accent: #7158EF;
+                --text_dark_gray: rgba(10, 0, 57, 0.64);
+                --text_dark: #090039;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: inherit;
+            }
+
+            ul, ol {
+                list-style: none;
+            }
+
+            body {
+                background-color: var(--bg_light);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            main {
+                width: 100vw;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                color: var(--text_dark);
+                padding: 60px 23px;
+            }
+
+            .section1 {
+                margin-bottom: 72px;
+            }
+
+            h1 {
+                height: 144px;
+                flex-shrink: 0;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 48px;
+                margin-bottom: 15px;
+            }
+
+            .par1, .par2 {
+                font-weight: 400;
+                line-height: 32px;
+            }
+
+            .par1 {
+                color: var(--text_dark_accent);
+                margin-bottom: 17px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+
+            .par2 {
+                margin-bottom: 32px;
+                color: var(--text_dark_gray);
+            }
+
+            .link {
+                color: var(--text_dark);
+                font-family: Epilogue;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+            }
+
+            .section2 > ul {
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                width: 100%;
+            }
+
+            .section2 > ul > li {
+                width: 300px;
+                height: 64px;
+                color: var(--text_dark);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2em;
+                align-items: center;
+            }
+
+            .section2 > ul > li > span {
+                width: 34px;
+                height: 80px;
+                color: var(--text_dark);
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 80px;
+                letter-spacing: -2px;
+            }
+
+            @media (min-width: 1024px) {
+                main {
+                    width: 100vw;
+                    display: flex;
+                    flex-direction: row;
+                    margin: 80px 135px;
+                }
+                .section1{
+                    width: 50%;
+                }
+                .section2 {
+                    width: 20%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="section1">
+                <p class="par1">nosso trabalho</p>
+                <h1>Fazemos Projetos para Mobile e Web</h1>
+                <p class="par2">
+                    Se você tem uma grande ideia inovadora e que vai transformar
+                    vidas, coloque em prática agora com a gente.
+                </p>
+                <a href="" class="link">Saiba Mais</a>
+            </section>
+            <section class="section2">
+                <ul>
+                    <li>
+                        <span>1</span>
+                        Experiência do usuário
+                    </li>
+                    <li>
+                        <span>2</span>
+                        Pagamentos no aplicativo
+                    </li>
+                    <li>
+                        <span>3</span>
+                        Suporte 24h todos os dias
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
