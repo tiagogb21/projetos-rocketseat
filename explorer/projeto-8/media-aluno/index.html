@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Cálculo da média de notas de um aluno"
+        />
+        <link rel="stylesheet" href="./css/index.css" />
+        <title>Média Aluno</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-container">
+                <div class="input-box">
+                    <label for="student-name">Digite o nome do aluno:</label>
+                    <input type="text" name="" id="student-name" placeholder="Nome do aluno"/>
+                </div>
+                <div class="input-box">
+                    <label for="input-grade1">Digite a primeira nota:</label>
+                    <input min="0" max="10" type="number" name="" id="input-grade1" placeholder="Nota1"/>
+                </div>
+                <div class="input-box">
+                    <label for="input-grade2">Digite a segunda nota:</label>
+                    <input min="0" max="10" type="number" name="" id="input-grade2" placeholder="Nota2"/>
+                </div>
+                <div class="input-box">
+                    <label for="input-grade3">Digite a terceira nota:</label>
+                    <input min="0" max="10" type="number" name="" id="input-grade3" placeholder="Nota3"/>
+                </div>
+                <div class="button-submit-container">
+                    <button class="button-submit" id="button-submit">salvar</button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do aluno</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Média do aluno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
